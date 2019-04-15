@@ -1,5 +1,3 @@
-package servidor;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -8,7 +6,7 @@ public class Servidor {
 	
 	private static int PORTA_PADRAO = 80;
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		String pasta = "";
 		int porta = PORTA_PADRAO;
@@ -24,7 +22,7 @@ public class Servidor {
 			servidor.iniciar(pasta,porta);
 		
 		} catch (NumberFormatException e) {
-			System.out.println("Porta não é um número.");	
+			System.out.println("Porta nÃ£o Ã© um nÃºmero.");	
 		} catch (Exception e) {
 			System.out.println("Pasta em branco.");
 		}

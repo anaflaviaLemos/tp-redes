@@ -1,5 +1,3 @@
-package servidor;
-
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -127,7 +125,7 @@ public class ServidorThread implements Runnable {
 		
 		String caminho = m.group(3).replaceFirst("/", "");
 		
-		System.out.println(" --- Requisição: " + this.pasta + "/" + caminho);
+		System.out.println(" --- RequisiÃ§Ã£o: " + this.pasta + "/" + caminho);
 				
 		return new File(this.pasta + "/" + caminho);
 	}

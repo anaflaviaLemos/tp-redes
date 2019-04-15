@@ -1,5 +1,3 @@
-package navegador;
-
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -21,7 +19,7 @@ public class Navegador {
 
 	private static int PORTA_PADRAO = 80;
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		String arquivo = "";
 		int porta = PORTA_PADRAO;
@@ -37,7 +35,7 @@ public class Navegador {
 			navegador.requisitar(arquivo, porta);
 		
 		} catch (NumberFormatException e) {
-			System.out.println("Porta n„o È um n˙mero.");	
+			System.out.println("Porta n√£o √© um n√∫mero.");	
 		} catch (Exception e) {
 			System.out.println("URL em branco.");
 		}
@@ -98,7 +96,7 @@ public class Navegador {
 			}
 			
 		} else {
-			System.out.println("Erro 404 - Arquivo n„o encontrado.");
+			System.out.println("Erro 404 - Arquivo n√£o encontrado.");
 		}
 	}
 	
